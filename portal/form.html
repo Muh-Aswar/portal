@@ -1,0 +1,218 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form E J O </title>
+    <link rel="stylesheet" href="css/styleEJO.css">
+  </head>
+  <body>
+    <div class="containerHeader">
+      <img src="asset/" alt="myr">
+      <h1> Irga Portal </h1>
+    </div>
+    <div class="container">
+      <!-- Untuk form userInput -->
+          <form class="formInputUser" action="aksiUserInput.php" method="post">
+            <div class="userInput">
+              <h3>+ Di isi oleh user</h3>
+              <div class="containerUserInput">
+                <div class="containerUserInputKiri">
+                  <p>Tanggal</p>
+                  <input type="date" placeholder="tanggal..." name="tanggal">
+                  <br></br>
+
+                  <p>Departemen</p>
+                  <input type="radio" name="dept" value="IRGA">
+                  <label for="dept">IRGA</label>
+                  <input type="radio" name="dept" value="PACKAGING">
+                  <label for="dept">PACKAGING</label>
+                  <input type="radio" name="dept" value="PRODUKSI">
+                  <label for="dept">PRODUKSI</label>
+                  <br></br>
+
+                  <p>Status</p>
+                  <input type="radio" name="status" value="urgent">
+                  <label for="urgent">Urgent</label>
+                  <input type="radio" name="status" value="normal">
+                  <label for="urgent">Normal</label>
+                  <br></br>
+                </div>
+
+                <div class="containerUserInputKanan">
+                  <p>Kegiatan</p>
+                  <input type="radio" name="kegiatan" value="baru">
+                  <label for="kegiatan">Ganti Baru</label>
+                  <input type="radio" name="kegiatan" value="modif">
+                  <label for="kegiatan">Modifikasi</label>
+                  <input type="radio" name="kegiatan" value="repair">
+                  <label for="kegiatan">repair</label>
+                  <br></br>
+
+                  <p>Lokasi</p>
+                  <input type="radio" name="lokasi" value="1">
+                  <label for="radio">1</label>
+                  <input type="radio" name="lokasi" value="2">
+                  <label for="radio">2</label>
+                  <input type="radio" name="lokasi" value="3">
+                  <label for="radio">3</label>
+                  <input type="radio" name="lokasi" value="4">
+                  <label for="radio">4</label>
+                  <input type="radio" name="lokasi" value="5">
+                  <label for="radio">5</label>
+                  <br></br>
+
+                  <p>Mesin</p>
+                  <select name="mesin">
+                    <option value="Line 1">Line 1</option>
+                    <option value="Line 2">Line 2</option>
+                    <option value="Line 3">Line 3</option>
+                  </select>
+                </div>
+              </div>
+              <p>Disertai Lampiran</p>
+              <input type="radio" name="lampiran" value="ya">
+              <label for="lampiran">Ya</label>
+              <input type="radio" name="lampiran" value="tidak">
+              <label for="lampiran">Tidak</label>
+              <p>Deskripsi Lampiran</p>
+              <textarea name="deskLampiran" rows="3" cols="25" placeholder="Pintu miring dll....."></textarea>
+              <br></br>
+  <!-- Untuk form persetujuan -->
+              <div class="containerPersetujuan">
+                <div class="persetujuan">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td bgcolor="#e2e179">Diminta</td>
+                        <td bgcolor="#e2e179">Diperiksa</td>
+                        <td bgcolor="#e2e179">Disetujui</td>
+                      </tr>
+                      <tr height="70px">
+                        <td>TTD</td>
+                        <td>TTD</td>
+                        <td>TTD</td>
+                      </tr>
+                      <tr>
+                        <td>User</td>
+                        <td>UH / SH </td>
+                        <td>DH</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="serahTerima">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td colspan="2" bgcolor="#e2e179">Serah Terima</td>
+                      </tr>
+                      <tr height="70px">
+                        <td>TTD</td>
+                        <td>TTD</td>
+                      </tr>
+                      <tr>
+                        <td>PIC Area</td>
+                        <td>UH / SH / DH</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+                <div class="containerBtn">
+                  <button class="btn-success" type="submit" name="simpan">Simpan</button>
+                </div>
+              </div>
+          </form>
+          <br></br>
+
+
+      <!-- Untuk Form Koordinasi -->
+          <form action="aksiFormKoordinasi.php" method="post">
+            <div class="containerFormKoordinasi">
+              <div class="kordinasiPelaksana">
+                <h3> + Koordinasi pelaksanaan</h3>
+
+                  <p>Akan dikerjakan tanggal</p>
+                  <input type="date" name="tglDikerja" placeholder="Tanggal dikerjakan...">
+
+                  <p>Lama pengerjaan</p><p>
+                  <input type="text" name="estimasi" placeholder="Estimasi...">/ Hari</p>
+
+                  <p>Nama teknisi</p>
+                  <input type="text" name="namaTeknisi" placeholder="Nama Teknisi yg bekerja...">
+
+                  <p>Nama perwakila dari user</p>
+                  <input type="text" name="namaPerwakilan" placeholder="Nama Perwakilan...">
+
+                  <p>Apakah ada potensi kontaminasi ?</p>
+                  <input type="radio" name="potensiKontaminasi" value="ya">
+                  <label for="potensiKontaminasi">Ya</label>
+                  <input type="radio" name="potensiKontaminasi" value="tidak">
+                  <label for="potensiKontaminasi">Tidak</label>
+              </div>
+              <div class="persetujuanKoordinasi">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td colspan="2" bgcolor="#e2e179">Disetujui</td>
+                    </tr>
+                    <tr height="70px">
+                      <td>TTD</td>
+                      <td>TTD</td>
+                    </tr>
+                    <tr>
+                      <td>FST Engineering</td>
+                      <td>FST User </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="containerBtn">
+                  <button class="btn-success" type="submit" name="simpan">Simpan</button>
+                </div>
+              </div>
+            </div>
+          </form>
+          <br></br>
+
+      <!-- Untuk form Tim Engineering -->
+          <form action="aksiInputEngineering.php" method="post">
+            <div class="containerEngineeringInput">
+              <div class="engineeringInput">
+                <h3>+ Diisi oleh engineering</h3>
+                <p>Tindakan yang di lakukan </p>
+                <textarea name="tindakan" rows="3" cols="35" placeholder="Tindakan yang di lakukan...."></textarea>
+                <p>Analisa</p>
+                <textarea name="analisa" rows="3" cols="35" placeholder="Analisa penyebab masalah...."></textarea>
+                <p>Pelaksana</p>
+                <input type="radio" name="pelaksana" value="maintenance">
+                <label for="pelaksana">Maintenance</label>
+                <input type="radio" name="pelaksana" value="utility">
+                <label for="pelaksana">Utility</label>
+                <input type="radio" name="pelaksana" value="hvac">
+                <label for="pelaksana">HVAC</label>
+                <input type="radio" name="pelaksana" value="prodSupport">
+                <label for="pelaksana">Prod Support</label>
+                <br></br>
+                <p> <strong>Aktual Pengerjaan</strong> </p>
+                <p>Mulai Pengerjaan <input type="date" name="mulaiPengerjaan"></input> </p>
+                <p>Selesai Pengerjaan <input type="date" name="selesaiPengerjaan"></input> </p>
+
+                <p>Down Time ? </p>
+                <input type="radio" name="downTime" value="Ya">
+                <label for="downTime">Ya</label>
+                <input type="radio" name="downTime" value="Tidak">
+                <label for="downTime">Tidak</label>
+                <p>Lama Down Time</p>
+                <input type="text" name="lamaDownTime" placeholder="Lama Down Time">
+                <p>Catatan Lain Lain</p>
+                <textarea name="catatan" rows="3" cols="35" placeholder="Catatan diluar Form..."></textarea>
+              </div>
+                <div class="containerBtn">
+                  <button class="btn-danger" type="submit" name="batal">Batal</button>
+                  <button class="btn-success" type="submit" name="simpan">Simpan</button>
+                </div>
+            </div>
+          </form>
+    </div>
+  </body>
+</html>

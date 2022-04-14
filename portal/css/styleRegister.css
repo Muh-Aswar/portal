@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'nunito';
+    src: url('font/Nunito-Light.ttf');
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'nunito';
+}
+.containerHeader{
+  margin-bottom: 20px;
+  padding: 12px 0;
+  display: flex;
+  box-shadow: 0 0 10px #6f8269;
+}
+.containerHeader h1{
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #cf251a;
+}
+.containerHeader > img{
+  width: 40px;
+  margin: 5px;
+  padding-left: 45px;
+  padding-right: 15px;
+}
+
+/* Container form register */
+.containerFormRegister{
+  width: 90%;
+  margin: auto;
+}
+.containerFormRegister h1{
+  text-align: center;
+}
+.formRegister{
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+}
+.formRegister p{
+  margin: 18px 0 3px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+.formRegister input{
+  height: 20px;
+  padding: 2px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  width: 90%;
+}
+
+.formRegister button{
+  width: 30%;
+  border: none;
+  height: 45px;
+  margin-bottom: 12px;
+  background: #b12d2d;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formRegister button:hover{
+  background: #9d1717;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  end */
